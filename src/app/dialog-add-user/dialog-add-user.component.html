@@ -1,0 +1,55 @@
+<h1 mat-dialog-title>Add User</h1>
+<div mat-dialog-content class="dialog-css">
+    <div class="section1 ">
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Enter First Name</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Enter Last Name</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose Birth Date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>         
+        </div>
+    </div>
+    <div class="section2">
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Address</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Address with Housenumber</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Zip Code</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Enter the Zip Code</mat-hint>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Place & Country</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-hint>Place with Country</mat-hint>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions class="cancel-save-position">
+  <button mat-button>Cancel</button>
+  <button mat-button>Save</button>
+</div>
